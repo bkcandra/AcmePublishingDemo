@@ -1,5 +1,7 @@
 # AcmePublishingDemo
 
+db diagram is available on  https://github.com/bkcandra/AcmePublishingDemo/blob/master/AcmePublishingDemo.API/diagram.png
+
 One solution to create a recurrent task is to use azure function with timer trigger, we can also create a windows task scheduler, azure logic etc.
 
 The process is as follows :
@@ -14,3 +16,11 @@ The process is as follows :
 In case the function cannot find a distribution company for a specific delivery country, 
 
 it creates an error record. The error record captures the relevant details, such as the country ID and the inability to find a suitable distribution company.
+
+
+Note: 
+
+- The distribution API on this solution can be implemented using various database systems such as MongoDB, SQL Server, or PostgreSQL. 
+- Additionally, based on the specific requirements, it is possible to have a single API that connects to multiple distribution databases located in different regions or countries.
+- This approach allows for compliance with individual country requirements on PII 
+- The choice of database system and the architecture for connecting to multiple databases should be determined based on the specific needs and scalability requirements.
